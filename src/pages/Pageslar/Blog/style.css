@@ -1,0 +1,8 @@
+.detalis_name{
+    background-image: url(../img/breadcrumb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    align-items: center;
+    padding: 45px 0 40px;
+}
