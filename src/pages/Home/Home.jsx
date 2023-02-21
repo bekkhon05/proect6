@@ -9,7 +9,7 @@ import './Home.css';
 import HomTabs from './HomTabs';
 import { BsCalendar } from "react-icons/bs";
 import { FaRegComment } from "react-icons/fa";
-
+import nars from "./bann.webp"
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 400, itemsToShow: 1 },
@@ -37,27 +37,53 @@ export default class Home extends Component {
             <Box id='Home'>
                 <Container>
                     <Box>
-                        {/* <Box>
-                            <Box id='hommenu1'>
-                                <Box>
-                                    <Typography>
-                                        FRUIT FRESH
-                                    </Typography>
-                                    <Typography>
-                                        Vegetable
-                                    </Typography>
-                                    <Typography>
-                                        100% Organic
-                                    </Typography>
-                                    <Typography>
-                                        Free Pickup and Delivery Available
-                                    </Typography>
-                                    <Link>
-                                        SHOP NOW
-                                    </Link>
+                        <Grid container spacing={2} sx={{ mb: "50px" }}>
+                            <Grid item lg={3} md={3} sm={12}>
+
+                            </Grid>
+                            <Grid item lg={9} md={9} sm={12}>
+                                <Box sx={{ height: { lg: "100%", md: "70vh", sm: "65vh", xs: "75vh" } }}>
+                                    <img src={nars} alt="" style={{ width: "100%", height: "100%" }} />
                                 </Box>
-                            </Box>
-                        </Box> */}
+                                <Box sx={{display:"flex", alignItems:"center"}}>
+
+                                    <Box sx={{ position: "absolute", mt: "-400px", ml: "50px" }}>
+                                        <Typography
+                                            sx={{
+                                                fontSize: "14px", textTransform: "uppercase", fontWeight: "700", letterSpacing: "4px", color: "#7fad39",
+                                            }}>
+                                            FRUIT FRESH
+                                        </Typography>
+                                        <Typography sx={{
+                                            fontSize: "46px",
+                                            maxWidth: "380px",
+                                            color: "#252525",
+                                            lineHeight: "52px", fontWeight: "800", m: "10px 0"
+                                        }}>
+                                            Vegetable 100% Organic
+                                        </Typography>
+                                        <Typography sx={{ mb: "35px", color: "#6f6f6f" }}>
+                                            Free Pickup and Delivery Available
+                                        </Typography>
+
+                                        <Typography sx={{
+                                            fontSize: "14px",
+                                            p: "10px 28px 10px", color: "white",
+                                            textTransform: "uppercase",
+                                            background: "#7fad39",
+                                            fontWeight: "600",
+                                            letterSpacing: "2px",
+                                            width: "150px",
+                                            cursor: "pointer"
+                                        }}>
+                                            Shop Now
+                                        </Typography>
+                                    </Box>
+                                </Box>
+
+                            </Grid>
+
+                        </Grid>
                         <Box id='hommenu4'>
                             <Carousel breakPoints={breakPoints} >
                                 {Homemap.map((val) => (
@@ -103,7 +129,7 @@ export default class Home extends Component {
                         </Box>
                         <Box>
                             <Box sx={{
-                                display: {xl:'flex',lg:'flex',md:'flex',sm:'flex',xs:'block'}
+                                display: { xl: 'flex', lg: 'flex', md: 'flex', sm: 'flex', xs: 'block' }
                             }}>
                                 <Box sx={{
                                     width: '100%',
@@ -136,7 +162,7 @@ export default class Home extends Component {
                                                     Latest Products
                                                 </Typography>
                                             </Box>
-                                            <Slider {...settings} style={{padding:'0 15px'}}>
+                                            <Slider {...settings} style={{ padding: '0 15px' }}>
                                                 {HomemapCarUsh.map((val3) => (
                                                     <Box sx={{ width: '100%' }}>
                                                         <Link href='#' sx={{ textDecoration: 'none', width: '100%' }}>
@@ -254,7 +280,7 @@ export default class Home extends Component {
                                                     Latest Products
                                                 </Typography>
                                             </Box>
-                                            <Slider {...settings} style={{padding:'0 15px'}}>
+                                            <Slider {...settings} style={{ padding: '0 15px' }}>
                                                 {HomemapCarUsh.map((val3) => (
                                                     <Box sx={{ width: '100%' }}>
                                                         <Link href='#' sx={{ textDecoration: 'none', width: '100%' }}>
@@ -371,7 +397,7 @@ export default class Home extends Component {
                                                     Latest Products
                                                 </Typography>
                                             </Box>
-                                            <Slider {...settings} style={{padding:'0 15px'}}>
+                                            <Slider {...settings} style={{ padding: '0 15px' }}>
                                                 {HomemapCarUsh.map((val3) => (
                                                     <Box sx={{ width: '100%' }}>
                                                         <Link href='#' sx={{ textDecoration: 'none', width: '100%' }}>
@@ -506,39 +532,39 @@ export default class Home extends Component {
                                     </Box>
                                 </Box>
                                 <Box>
-                                    <Grid container>    
-                                    {Homemapohiriyes.map((val4) => (
+                                    <Grid container>
+                                        {Homemapohiriyes.map((val4) => (
                                             <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
-                                                <Box sx={{padding:'0 15px'}}>
+                                                <Box sx={{ padding: '0 15px' }}>
                                                     <Box>
-                                                        <Typography sx={{width:'100%',marginBottom:'25px'}}>
+                                                        <Typography sx={{ width: '100%', marginBottom: '25px' }}>
                                                             <img src={val4.img1} alt="" width={'100%'} />
                                                         </Typography>
-                                                        <Box sx={{display:'flex',alignItems:'center',marginBottom:'15px'}}>
+                                                        <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: '15px' }}>
                                                             <Typography sx={{
-                                                                fontSize:'16px',
-                                                                color:'#b2b2b2',
-                                                                marginRight:'15px'
+                                                                fontSize: '16px',
+                                                                color: '#b2b2b2',
+                                                                marginRight: '15px'
                                                             }}>
-                                                                <BsCalendar style={{marginRight:'4px',marginBottom:'-1px'}} />
+                                                                <BsCalendar style={{ marginRight: '4px', marginBottom: '-1px' }} />
                                                                 May 4,2019
                                                             </Typography>
-                                                            <Typography  sx={{
-                                                                fontSize:'16px',
-                                                                color:'#b2b2b2',
-                                                                marginRight:'15px'
+                                                            <Typography sx={{
+                                                                fontSize: '16px',
+                                                                color: '#b2b2b2',
+                                                                marginRight: '15px'
                                                             }}>
-                                                                <FaRegComment style={{marginRight:'4px',marginBottom:'-2px'}} /> 
-                                                                  5
+                                                                <FaRegComment style={{ marginRight: '4px', marginBottom: '-2px' }} />
+                                                                5
                                                             </Typography>
                                                         </Box>
                                                         <Link href='#' sx={{
-                                                                fontSize: '19px',
-                                                                color: '#1c1c1c',
-                                                                fontWeight: 600 ,
-                                                                fontFamily:'"Cairo", sans-serif',
-                                                                textDecoration:'none',
-                                                                cursor:'pointer'
+                                                            fontSize: '19px',
+                                                            color: '#1c1c1c',
+                                                            fontWeight: 600,
+                                                            fontFamily: '"Cairo", sans-serif',
+                                                            textDecoration: 'none',
+                                                            cursor: 'pointer'
                                                         }}>
                                                             {val4.yoz1}
                                                         </Link>
@@ -548,8 +574,8 @@ export default class Home extends Component {
                                                     </Box>
                                                 </Box>
                                             </Grid>
-                                    ))}
-                                        </Grid>
+                                        ))}
+                                    </Grid>
                                 </Box>
                             </Box>
                         </Box>

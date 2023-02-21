@@ -183,8 +183,8 @@ function Navbar() {
                             <Box sx={{ width: "100%", height: "50px", p: "12px 0", display: "flex", alignItems: "center" }}>
                                 <Box sx={{ width: "80%", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
 
-                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }}>HOME</Link>
-                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }}>SHOP </Link>
+                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }} to="/">HOME</Link>
+                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }} to="/shop">SHOP </Link>
                                     <Box sx={{ minHeight: '100%', marginRight: '0px' }}>
                                         <Link style={{ textDecoration: 'none', height: 'auto' }}>
                                             <Box id='NavmenuZzz7'>
@@ -194,24 +194,24 @@ function Navbar() {
                                                     </Typography>
                                                 </Box>
                                                 <Box id='NavmenuZzz8'>
-                                                    <Link to='/shop' id='NavmenuZzz4'>
+                                                    <Link to='/detalis' id='NavmenuZzz4'>
                                                         Shop Details
                                                     </Link>
-                                                    <Link to="/product" id='NavmenuZzz4'>
+                                                    <Link to="/Shopcard" id='NavmenuZzz4'>
                                                         Shopping cart
                                                     </Link>
-                                                    <Link to='/blog' id='NavmenuZzz4'>
+                                                    <Link to='/checout' id='NavmenuZzz4'>
                                                         Check Out
                                                     </Link>
-                                                    <Link to='/blogpost' id='NavmenuZzz4'>
+                                                    <Link to='/blog' id='NavmenuZzz4'>
                                                         Blog Details
                                                     </Link>
                                                 </Box>
                                             </Box>
                                         </Link>
                                     </Box>
-                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }}>BLOG</Link>
-                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }}>CONTACT</Link>
+                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }} to="/blog">BLOG</Link>
+                                    <Link style={{ color: "#252525", fontWeight: "700", fontSize: "14px", textDecoration: "none" }} to="/contact">CONTACT</Link>
                                 </Box>
                             </Box>
                             {/* <Menu
@@ -474,9 +474,9 @@ function Navbar() {
                         <Grid item lg={3} md={3} sm={12} sx={{ width: "100%" }}>
                             <Box sx={{ width: '100%', height: '100%', mt: "5px" }}>
                                 <React.Fragment sx={{ width: "100%" }}>
-                                    <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button" sx={{ width: "100% " }}>
+                                    <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button" sx={{ width: "100% ", }}>
                                         <Box onClick={handleToggle} sx={{ display: "flex", alignItems: "center", width: "100%" }}>
-                                            <Link onClick={handleClick} style={{ textDecoration: "none", width: "100%", padding: "15px 20px", fontSize: "18px", fontWeight: "700", height: "auto", background: "#7fad39", color: "white", display: "flex", justifyContent: "space-between" }} className="salomm">
+                                            <Link onClick={handleClick} style={{ textDecoration: "none", width: "100%", padding: "15px 20px", fontSize: "18px", fontWeight: "700", height: "auto", background: "#7fad39", color: "white", display: "flex", justifyContent: "space-between", alignItems:"center" }} className="salomm">
                                                 <FaBars style={{ marginRight: "0px" }} />
                                                 {options[selectedIndex]}
                                                 <FaChevronDown />
@@ -486,7 +486,7 @@ function Navbar() {
                                     <Popper
                                         sx={{
                                             zIndex: 1,
-                                            width: { lg: "18%", md: "22.5%", sm: "94%", xs: "93%" }
+                                            width: { lg: "16.5%", md: "22.5%", sm: "94%", xs: "93%" }
                                         }}
                                         open={open}
                                         anchorEl={anchorRef.current}

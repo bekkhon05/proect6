@@ -195,12 +195,12 @@ export default function PersistentDrawerLeft() {
                             <AccordionDetails>
                                 <Typography sx={{ ml: "16px", mb: "10px", }}>
 
-                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }}>
+                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }} to="/">
                                         Home
                                     </Link >
                                 </Typography>
                                 <Typography sx={{ ml: "16px" }}>
-                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }}>
+                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }} to="/shop">
                                         Shop
                                     </Link>
                                 </Typography>
@@ -219,28 +219,28 @@ export default function PersistentDrawerLeft() {
                                     <AccordionDetails>
                                         <Typography sx={{ ml: "30px", mt: "-15px" }}>
                                             <Typography sx={{ mb: "10px" }}>
-                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white", }}> Shop Details</Link>
+                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white", }} to="/detalis"> Shop Details</Link>
                                             </Typography>
                                             <Typography sx={{ mb: "10px" }}>
-                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white", }}> Shopping Cart</Link>
+                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white", }} to="/shopcard"> Shopping Cart</Link>
                                             </Typography>
                                             <Typography sx={{ mb: "10px" }}>
-                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white", }}> Check Out</Link>
+                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white", }} to="/checout"> Check Out</Link>
                                             </Typography>
                                             <Typography>
-                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }}> Blog Details</Link>
+                                                <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }} to="/blog"> Blog Details</Link>
                                             </Typography>
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
 
                                 <Typography sx={{ ml: "16px", mb: "10px" }}>
-                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }}>
+                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }} to="/blog">
                                         Blog
                                     </Link>
                                 </Typography>
                                 <Typography sx={{ ml: "16px" }}>
-                                    <Link style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }}>
+                                    <Link to="/contact" style={{ textDecoration: 'none', height: 'auto', fontSize: "14px", color: "white" }}>
                                         Contact
                                     </Link>
                                 </Typography>
