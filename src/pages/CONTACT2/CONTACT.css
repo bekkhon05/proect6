@@ -1,0 +1,65 @@
+#ContInp5{
+    display: flex;
+    width: 100%;
+}
+#ContInp1{
+    width: calc(100% - 15px);
+    height: 50px;
+    font-size: 16px;
+    color: #6f6f6f;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+#ContInp2{
+    width: calc(100% - 15px);
+    height: 50px;
+    font-size: 16px;
+    color: #6f6f6f;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+#ContInp3 {
+    width: 100%;
+    height: 150px;
+    font-size: 16px;
+    color: #6f6f6f;
+    padding-left: 20px;
+    margin-bottom: 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding-top: 12px;
+    resize: none;   
+}
+#ContInp4{
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 22px 12px;
+    background: #7fad39;
+    border: none;
+    font-size: 17.5px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Cairo", sans-serif;
+}
+@media screen and (max-width:770px) {
+    #ContInp5{
+        display: block;
+    }
+    #ContInp1{
+        width: 100%;
+        margin-right: 0;
+    }
+    #ContInp2{
+        width: 100%;
+        margin-left: 0;
+    }
+}
